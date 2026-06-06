@@ -1,32 +1,17 @@
-// 1. Ambil tombol dari HTML
 const tombol = document.getElementById('magic-btn');
 
-// 2. Siapkan daftar warna keren
-const daftarWarna = [
-    '#121212',
-        '#1a1a2e',
-            '#2d3436',
-                '#4834d4',
-                    '#6ab04c',
-                        '#eb4d4b'
-                        ];
+const daftarWarna = ['#121212', '#1a1a2e', '#2d3436', '#4834d4', '#6ab04c', '#eb4d4b'];
+let indexWarna = 0;
 
-                        let indexWarna = 0;
+tombol.addEventListener('click', function () {
 
-                        // 3. Fungsi untuk ganti warna saat diklik
-                        tombol.addEventListener('click', function () {
+    indexWarna++;
 
-                            // Geser ke warna berikutnya
-                                indexWarna++;
+    if (indexWarna >= daftarWarna.length) {
+        indexWarna = 0;
+}
 
-                                    // Kalau sudah sampai akhir, balik ke warna pertama
-                                        if (indexWarna >= daftarWarna.length) {
-                                                indexWarna = 0;
-                                                    }
+document.body.style.backgroundColor = daftarWarna[indexWarna];
 
-                                                        // Terapkan warna ke background body
-                                                            document.body.style.backgroundColor = daftarWarna[indexWarna];
-
-                                                                // Pesan di Console
-                                                                    console.log("Warna berubah ke: " + daftarWarna[indexWarna]);
-                                                                    });
+console.log("Warna berubah ke: " + daftarWarna[indexWarna]);
+});
