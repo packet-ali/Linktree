@@ -1,0 +1,63 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+                        color: white;
+                            display: flex;
+                                justify-content: center;
+                                    padding-top: 50px;
+                                    }
+
+                                    .container {
+                                        width: 90%;
+                                            max-width: 450px;
+                                                text-align: center;
+                                                }
+
+                                                /* 2. Menghias Foto Profil */
+                                                .foto-profil {
+                                                    width: 100px;
+                                                        height: 100px;
+                                                            border-radius: 50%;
+                                                                border: 3px solid #00ff88;
+                                                                    object-fit: cover;
+                                                                        margin-bottom: 15px;
+                                                                        }
+
+                                                                        h1 {
+                                                                            font-size: 20px;
+                                                                                margin-bottom: 5px;
+                                                                                }
+
+                                                                                p {
+                                                                                    font-size: 14px;
+                                                                                        color: #aaaaaa;
+                                                                                            margin-bottom: 30px;
+                                                                                            }
+
+                                                                                            /* 3. Membuat Tombol Mirip Linktree */
+                                                                                            .tombol-link {
+                                                                                                display: block;
+                                                                                                    background-color: #222222;
+                                                                                                        color: white;
+                                                                                                            text-decoration: none;
+                                                                                                                padding: 15px;
+                                                                                                                    margin-bottom: 15px;
+                                                                                                                        border-radius: 10px;
+                                                                                                                            border: 1px solid #333333;
+                                                                                                                                font-weight: bold;
+                                                                                                                                    transition: 0.3s ease;
+                                                                                                                                    }
+
+                                                                                                                                    /* 4. Efek Interaktif (Hover) */
+                                                                                                                                    .tombol-link:hover {
+                                                                                                                                        background-color: white;
+                                                                                                                                            color: black;
+                                                                                                                                                transform: scale(1.03);
+                                                                                                                                                }
