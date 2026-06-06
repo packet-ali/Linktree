@@ -1,6 +1,6 @@
 const tombol = document.getElementById('magic-btn');
 
-const daftarWarna = ['#121212', '#1a1a2e', '#2d3436', '#4834d4', '#6ab04c', '#eb4d4b'];
+const daftarWarna = ['#0f172a', '#1e293b', '#312e81', '#4c1d95', '#134e4a', '#111827'];
 let indexWarna = 0;
 
 tombol.addEventListener('click', function () {
