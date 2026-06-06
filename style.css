@@ -33,13 +33,12 @@ p { font-size: 14px; color: #aaaaaa; margin-bottom: 30px; }
 
 .tombol-link {
     display: block;
-    background-color: #222222;
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
     color: white;
     text-decoration: none;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
-    border: 1px solid #333333;
     font-weight: bold;
     transition: 0.3s ease;
 }
